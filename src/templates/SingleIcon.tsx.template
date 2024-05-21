@@ -13,14 +13,10 @@ const DEFAULT_STYLE: CSSProperties = {
   display: 'block',
 };
 
-const #componentName#: FunctionComponent<Props> = ({ size, color, style: _style, ...rest }) => {
+const #componentName#: FunctionComponent<Props> = ({ size = #size#, color, style: _style, ...rest }) => {
   const style = _style ? { ...DEFAULT_STYLE, ..._style } : DEFAULT_STYLE;
 
   return (#iconContent#  );
-};
-
-#componentName#.defaultProps = {
-  size: #size#,
 };
 
 export default #componentName#;
