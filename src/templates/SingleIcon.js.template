@@ -7,14 +7,10 @@ const DEFAULT_STYLE = {
   display: 'block',
 };
 
-const #componentName# = ({ size, color, style: _style, ...rest }) => {
+const #componentName# = ({ size = #size#, color, style: _style, ...rest }) => {
   const style = _style ? { ...DEFAULT_STYLE, ..._style } : DEFAULT_STYLE;
 
   return (#iconContent#  );
-};
-
-#componentName#.defaultProps = {
-  size: #size#,
 };
 
 export default #componentName#;
